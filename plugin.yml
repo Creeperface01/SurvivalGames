@@ -1,0 +1,9 @@
+name: SurvivalGamesPE
+main: SG\Main
+api: [1.13.0]
+load: STARTUP
+description: SurvivalGames for PocketMine v1.6!
+version: 0.0.1.beta
+authors: [kvetinac97, Creeperface01]
+commands: []
+permissions: []
