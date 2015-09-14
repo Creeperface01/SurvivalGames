@@ -1,0 +1,31 @@
+#Arena name:
+arena-name: Moonlight_Lake
+
+#Arena level
+arena-level: moonlight_lake
+
+#Should chests be refilled?
+#There is no need to write chests coordinates, plugin will automatically detect all chests in the arena-level
+refill: true
+
+#What is time after game start (in seconds)?
+refill-time: 300
+
+#Refill item names:
+#Plugin will automatically detect if item is tool/itemblock/item (and will set count depending on it)
+refill-items:
+- DIAMOND_SWORD
+- STONE
+
+#Write spawn positions:
+spawn-positions:
+#- -x
+#  -y
+#  -z
+- -127
+  -45
+  -38
+- --14
+  -5
+  -78
+#there is still many things to do
