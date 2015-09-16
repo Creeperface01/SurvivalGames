@@ -10,23 +10,29 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 
 use SurvivalGames\arena\ChestRefill;
-use SurvivalGames\SGMain;
 
 class Timer extends PluginTask {
 
- public $plugin;
  public $refill;
  public $arena;
 
- public function __construct(SGMain $plugin, arena\ChestRefill $refill){
-  $this->plugin = $plugin;
+ //Arena data...
+ private $running;
+ $this->running = [];
+
+ public function __construct(ChestRefill $refill){
   $this->refill = $refill;
-  parent::__construct($plugin);
+  parent::__construct($refill);
  }
 
- $this->arena = array scandir($this->getDataFolder()."arena/");
- foreach ($this->arena as $arena){
-  $config = new Config($arena,Config::YAML);
- //to be continued
+ public function onRun($t){
+  $this->arena = array scandir($this->getDataFolder()."arena/");
+  foreach ($this->arena as $arena){
+   $config = new Config($arena,Config::YAML);
+   $temparray = [
+    $config->get("arena-name") => $config->getAll()
+   ];
+   $this->running = merge_array(
+  }
  }
 }
