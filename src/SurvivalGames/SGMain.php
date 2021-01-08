@@ -13,7 +13,7 @@ use pocketmine\event\Listener;
 
 class SGMain extends PluginBase implements Listener{
 
- public function onEnable(){
+ public function onEnable() {
   $this->getLogger()->info(TextFormat::DARK_GREEN."SurvivalGames ENABLED!");
   $this->getLogger()->notice(TextFormat::GRAY."Copyright 2015 PocketMineDevelopers");
   
